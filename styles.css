@@ -1,0 +1,21 @@
+body {
+	font-family: Arial;
+	color: green;
+	font-size: 20px;
+}
+
+p {
+	font-size: 20px;
+}
+
+mark {
+	font-weight: bold;
+}
+
+ul {
+	list-style-type: circle;
+}
+
+li {
+	font-size: 26px;
+}
