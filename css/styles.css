@@ -1,0 +1,636 @@
+/**
+ * === AUTHOR: EUGENIA CARLINI ===
+ * === COMMON STYLES ===
+ */
+
+* {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+a,
+a:hover {
+  display: inline-block;
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  line-height: 1.3em;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  color: #4D4D4D;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1,
+p {
+  font-size: 1.1em;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 1.1em;
+}
+
+button {
+  display: block;
+  font-size: 1.1em;
+  padding: .6em 1em;
+  border: 0;
+  border-radius: .2em;
+  cursor: pointer;
+}
+
+a {
+  color: #999;
+}
+
+a:hover {
+  color: #333;
+}
+
+.center {
+  max-width: 550px;
+  margin: auto;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.btn-green {
+  color: #FFF;
+  display: block;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin: 0 auto;
+  background: #61BD4F;
+  background: -webkit-linear-gradient(top, #61BD4F 0, #5AAC44 100%);
+  background: linear-gradient(to bottom, #61BD4F 0, #5AAC44 100%);
+  box-shadow: 0 2px 0 #3F6F21;
+}
+
+.btn-green:hover {
+  background: #5AAC44;
+  background: -webkit-linear-gradient(top, #5AAC44 0, #519839 100%);
+  background: linear-gradient(to bottom, #5AAC44 0, #519839 100%);
+}
+
+.btn-default {
+  background: transparent;
+  border: 1px solid #5E98BA;
+  color: #5E98BA;
+}
+
+.btn-default:hover {
+  border-color: #265773;
+  color: #265773;
+}
+
+.btn-white {
+  background: transparent;
+  border: 1px solid #e0e0e0;
+  color: #e0e0e0;
+}
+
+.btn-white:hover {
+  border-color: #FFF;
+  color: #FFF;
+}
+
+#description,
+#dashboard,
+#capabilities,
+#companies,
+#signUp,
+#taco,
+footer {
+  text-align: center;
+}
+
+#dashboard,
+#companies,
+#taco {
+  background-color: #0079BF;
+  color: #FFF;
+}
+
+#devices {
+  background-color: #E4F0F6;
+}
+
+#businessClass {
+  background-color: #42548E;
+  color: #FFF;
+}
+
+#description,
+#dashboard,
+#companies,
+#businessClass,
+#signUp {
+  padding: 100px 20px;
+}
+
+#devices,
+#powerUps,
+#taco,
+footer {
+  padding: 50px 20px;
+}
+
+#capabilities {
+  padding: 100px 20px 0;
+}
+
+#devices,
+#powerUps,
+#businessClass,
+#taco {
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+.arrow-up {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  opacity: 0.5;
+}
+
+/**
+* === HEADER ===
+*/
+
+header {
+  background-color: #FFF;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+}
+
+#mainMenu ul {
+  color: #0079BF;
+}
+
+#mainMenu li {
+  padding: 40px;
+  display: inline-block;
+  padding: 20px;
+}
+
+ #mainMenu a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+#mainMenu .icon {
+  display: none;
+}
+
+#mainMenu .menuToggle:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 1.3em;
+  transform: translate(-50%,-50%);
+  width: 1.3em;
+  height: 0.15em;
+  background: #999;
+  box-shadow:
+  0 0.25em 0 0 #999,
+  0 0.5em 0 0 #999;
+}
+
+/**
+* === SOCIAL NETWORKS ===
+*/
+
+#socialNetworks {
+  padding: 5px 5px 5px 0;
+  position: fixed;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+#socialNetworks li {
+  max-width: 1.6em;
+}
+
+#socialNetworks li:last-child {
+  padding-bottom: 0;
+}
+
+#socialNetworks img {
+  border-radius: 0 5px 5px 0;
+}
+
+/**
+* === SECTION DESCRIPTION ===
+*/
+
+#description h2 {
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+#description p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+#description a {
+  margin-top: 30px;
+}
+
+/**
+ * === SECTION DASHBOARD ===
+ */
+
+#dashboard h1,
+#dashboard p {
+  text-align: left;
+}
+
+#dashboard .center p:first-child {
+  margin-bottom: 30px;
+}
+
+#dashboard img {
+  margin: 50px 0;
+}
+
+/**
+ * === SECTION CAPABILITIES ===
+ */
+
+#capabilities h1 {
+  max-width: 560px;
+  margin: auto;
+}
+
+#capabilities .btn-default {
+  margin: 40px auto;
+}
+
+/**
+ * === SECTION DEVICES ===
+ */
+
+#devices .left,
+#devices .right {
+  width: 50%;
+}
+
+#devices h1 {
+  margin: 30px 0;
+}
+
+#devices .right {
+  text-align: right;
+}
+
+#devices p {
+  display: inline;
+  margin-right: 20px;
+}
+
+#devices p img {
+  height: 2.8em;
+}
+
+/**
+ * === SECTION POWER UPS ===
+ */
+
+#powerUps {
+  text-align: center;
+}
+
+#powerUps .left {
+  width: 60%;
+}
+
+#powerUps .right {
+  width: 40%;
+}
+
+#powerUps h1 {
+  padding-top: 45px;
+}
+
+/**
+ * === SECTION COMPANIES ===
+ */
+
+#companies h1 {
+  margin-bottom: 50px;
+}
+
+#companies img {
+  margin: 30px 30px 0 30px;
+}
+
+/**
+ * === SECTION BUSINESS CLASS ===
+ */
+
+#businessClass .left,
+#businessClass .right {
+  width: 50%;
+}
+
+#businessClass img {
+  max-width: 70%;
+}
+
+#businessClass button {
+  margin: 20px 0 0;
+}
+
+/**
+ * === SECTION SIGN UP ===
+ */
+
+#signUp h1 {
+  max-width: 560px;
+  margin: 0 auto 20px;
+}
+
+/**
+ * === SECTION TACO ===
+ */
+
+#taco {
+  text-align: center;
+}
+
+#taco .container {
+  max-width: 800px;
+}
+
+#taco .left {
+  width: 20%;
+}
+
+#taco .right {
+  width: 80%;
+}
+
+#taco img {
+  padding-bottom: 30px;
+}
+
+/**
+ * === FOOTER ===
+ */
+
+footer #nav-footer li {
+  font-size: 0.9em;
+  display: inline-block;
+  padding: 10px;
+}
+
+footer p {
+  color: #999;
+  font-size: 0.9em;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+/**
+ * === MEDIA QUERIES ===
+ */
+
+@media only screen and (min-width: 1281px) {
+
+  #powerUps h1 {
+    float: left;
+    text-align: left;
+  }
+
+  #powerUps img {
+    float: right;
+  }
+
+  #taco img {
+    float: left;
+    padding-bottom: 0;
+  }
+
+  #taco h1 {
+    float: right;
+    padding-top: 80px;
+  }
+
+}
+
+@media only screen and (min-width:769px) and (max-width:1280px) {
+
+  #mainMenu li {
+    display: block;
+  }
+
+  #mainMenu .links {
+    display: none;
+  }
+
+  #mainMenu .icon {
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  #mainMenu .icon a {
+    font-size: 20px;
+  }
+
+  #devices .left,
+  #devices .right,
+  #businessClass .left,
+  #businessClass .right {
+    width: 100%;
+    text-align: center;
+  }
+
+  #devices button {
+    margin: 30px auto;
+  }
+
+  #devices .right img {
+    text-align: center;
+  }
+
+  #powerUps h1 {
+    float: left;
+    text-align: left;
+  }
+
+  #powerUps img {
+    float: right;
+  }
+
+  #businessClass img {
+    max-width: 400px;
+  }
+
+  #businessClass h1 {
+    padding: 30px 150px;
+  }
+
+  #businessClass button {
+    margin: auto;
+  }
+
+  #taco img {
+    float: left;
+    padding-bottom: 0;
+  }
+
+  #taco h1 {
+    float: right;
+    padding-top: 80px;
+  }
+
+}
+
+@media only screen and (min-width:481px) and (max-width:768px) {
+
+  #mainMenu li {
+    display: block;
+  }
+
+  #mainMenu .links {
+    display: none;
+  }
+
+  #mainMenu .icon {
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  #mainMenu .icon a {
+    font-size: 20px;
+  }
+
+  #devices .left,
+  #devices .right,
+  #powerUps .left,
+  #powerUps .right,
+  #businessClass .left,
+  #businessClass .right,
+  #taco .left,
+  #taco .right {
+    width: 100%;
+    text-align: center;
+  }
+
+  #devices button {
+    margin: 30px auto;
+  }
+
+  #devices .right img {
+    text-align: center;
+  }
+
+  #powerUps img {
+    padding-top: 30px;
+  }
+
+  #businessClass img {
+    max-width: 400px;
+  }
+
+  #businessClass h1 {
+    padding: 30px 80px;
+  }
+
+  #businessClass button {
+    margin: auto;
+  }
+
+}
+
+@media only screen and (max-width:480px) {
+
+  #mainMenu li {
+    display: block;
+  }
+
+  #mainMenu .links {
+    display: none;
+  }
+
+  #mainMenu .icon {
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  #mainMenu .icon a {
+    font-size: 20px;
+  }
+
+  #devices .left,
+  #devices .right,
+  #powerUps .left,
+  #powerUps .right,
+  #businessClass .left,
+  #businessClass .right,
+  #taco .left,
+  #taco .right {
+    width: 100%;
+    text-align: center;
+  }
+
+  #devices button {
+    margin: 30px auto;
+  }
+
+  #devices .right img {
+    text-align: center;
+  }
+
+  #powerUps img {
+    padding-top: 30px;
+  }
+
+  #businessClass img {
+    max-width: 100%;
+  }
+
+  #businessClass h1 {
+    padding: 30px 20px;
+  }
+
+  #businessClass button {
+    margin: auto;
+  }
+
+}
