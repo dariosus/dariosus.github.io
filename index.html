@@ -1,188 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
-    <title>Trello</title>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <script src="js/jquery.min.js"></script>
-  </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+         p {
+            margin-top: 25px;
+            text-align: center;
+            font-size: 50px;
+            font-family: Roboto, sans-serif;
+            margin-bottom: 0;
+        }
 
-  <body>
-    <header>
-      <nav id="mainMenu">
-        <ul>
-          <li class="icon"><a href="javascript:void(0);" class="menuToggle" title="menu"></a></li>
-          <li class="links"><a href="#dashboard" title="Dashboard">Dashboard</a></li>
-          <li class="links"><a href="#capabilities" title="Capabilities">Capabilities</a></li>
-          <li class="links"><a href="#devices" title="Devices">Devices</a></li>
-          <li class="links"><a href="#powerUps" title="Power ups">Power ups</a></li>
-          <li class="links"><a href="#companies" title="Companies">Companies</a></li>
-          <li class="links"><a href="#businessClass" title="Business class">Business class</a></li>
-          <li class="links"><a href="#signUp" title="Sign up">Sign up</a></li>
-          <li class="links"><a href="#taco" title="Taco">Taco</a></li>
-        </ul>
-      </nav>
-    </header>
+        article {
+            background-color: blue;
+            margin-top: 25px;
+            width: 30%;
+            height: 25vh;
+            border-radius: 20px;
+        }
 
-    <aside>
-      <ul id="socialNetworks">
-        <li>
-          <a href="https://www.facebook.com/trelloapp" target="_blank" title="Facebook">
-            <img src="img/social-networks/facebook.svg" alt="facebook">
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/trello?lang=es" target="_blank" title="Twitter">
-            <img src="img/social-networks/twitter.svg" alt="twitter">
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/company/trello" target="_blank" title="Linkedin">
-            <img src="img/social-networks/linkedin.svg" alt="linkedin">
-          </a>
-        </li>
-      </ul>
-    </aside>
+        div.container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
 
-    <section id="description">
-      <h1>
-        <img src="img/logo.svg" alt="logo">
-      </h1>
-      <h2>Trello is the free, flexible, and visual way to organize anything with anyone.</h2>
-      <p>Drop the lengthy email threads, out-of-date spreadsheets, no-longer-so-sticky notes, and clunky software for managing your projects. Trello lets you see everything about your project in a single glance.</p>
-      <button type="button" class="btn-green">Sign up - it's free</button>
-      <a href="#" title="Log in">Log in...</a>
-    </section>
+        article a {
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: relative;
+        }
 
-    <section id="dashboard">
-      <div class="container">
-        <div class="center">
-          <h1>This is a Trello board. It’s a list of lists filled with cards, used with a team or by yourself.</h1>
-        </div>
-        <img src="img/dashboard.png" alt="dashboard">
-        <div class="center">
-          <p>Drag and drop cards between lists to show progress. Add as many people as you need and drag them to cards. Add and reorder lists as you need. <strong>Trello adapts to your project, team, and workflow.</strong></p>
-          <p>You’ll see everything about your project just by glancing at the board, and it all updates in real-time. There’s nothing to set up and everyone gets it instantly.</p>
-        </div>
-      </div>
-    </section>
+        article a img {
+            position: absolute;
+            bottom: 50%;
+            left: 50%;
+            transform: translate(-50%, 50%);
+        }
 
-    <section id="capabilities">
-      <div class="container">
-        <h1>Trello is simple on the surface, but cards have <strong>everything you need to get stuff done.</strong> Post comments for instant feedback. Upload files from your computer, Google Drive, Dropbox, Box, and OneDrive. Add checklists, labels, due dates, and more. Notifications make sure you always know when important stuff happens.</h1>
-        <button type="button" class="btn-default">See everything Trello can do</button>
-        <img src="img/capabilities.png" alt="capabilities">
-      </div>
-    </section>
+        article.zoom {
+            background-color: #2E8BFB;
+        }
 
-    <section id="devices">
-      <div class="container">
-        <div class="left">
-          <h1>Trello stays perfectly in sync across all your devices, wherever you are. There are fast and intuitive apps for the web, Android phones and tablets, iPhone and iPad and Kindle Fire.</h1>
-          <p>
-            <a href="#" title="download on app store">
-              <img src="img/app-store.svg" alt="download on app store">
+        article.so {
+            background-color: #e7e7e7;
+        }
+
+        article.slack {
+            background-color: white;
+            border-left: 1px solid #36C5F1;
+            border-top: 1px solid #4DB77D;
+            border-right: 1px solid #EDB32E;
+            border-bottom: 1px solid #E4495C;
+        }
+
+        article.email {
+            background-color: #FCBC5E;
+        }
+
+        article.aula-virtual {
+            background-color: #888888;
+        }
+
+        article.calendar {
+            background-color: #F9982C;
+        }
+
+        article.zoom img {
+            width: 65%;
+        }
+
+        article.so img {
+            width: 48%;
+        }
+
+        article.slack img {
+            width: 52%;
+        }
+        
+        article.email img {
+            width: 38%;
+        }
+
+        article.calendar img {
+            width: 38%;
+        }
+
+        article.aula-virtual img {
+            width: 60%;
+            bottom: 0;
+            transform: translate(-50%,0%);
+        }
+
+        @media(max-width:700px) {
+            article {
+                width: 45%;
+            }
+        }
+
+        @media(max-width:500px) {
+            article {
+                width: 90%;
+            }
+
+            div.container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+
+            p {
+                font-size: 35px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p>Mis herramientas</p>
+    <div class="container">
+        <article class="zoom">
+            <a href="http://zoom.us" target="_blank">
+                <img src="https://drive.google.com/uc?id=1DTJG-Bzzh7T4ZIAm77MkU2-vNBN0EFxB" alt="">
             </a>
-            <a href="#" title="download on google play">
-              <img src="img/google-play.png" alt="download on google play">
+        </article>
+        <article class="so">
+            <a href="http://stackoverflow.com" target="_blank">
+                <img src="https://drive.google.com/uc?id=1pv5NMV_rsPV8mDx5IUfrJwsEw4Y5tPBi" alt="">
             </a>
-            <button type="button" class="btn-default">See All Apps</button>
-          </p>
-        </div>
-        <div class="right">
-          <img src="img/devices.png" alt="devices">
-        </div>
-      </div>
-    </section>
-
-    <section id="powerUps">
-      <div class="container">
-        <div class="left">
-          <h1>Trello will never overwhelm you with features you won’t use. For those who want more out of their boards, there are <strong>Power-Ups</strong> like calendar, card aging, and voting, that you can turn on. It’s a way to offer more without cluttering things for everyone.</h1>
-        </div>
-        <div class="right">
-          <img src="img/power-ups.png" alt="power ups">
-        </div>
-      </div>
-    </section>
-
-    <section id="companies">
-      <div class="container">
-        <h1><strong>Millions of people</strong> and companies of all kinds and sizes love using Trello.</h1>
-        <div class="images">
-          <img src="img/companies/fresh-direct.svg" alt="fresh direct">
-          <img src="img/companies/the-new-york-times.svg" alt="the new york times">
-          <img src="img/companies/53.svg" alt="53">
-          <img src="img/companies/the-verge.svg" alt="the verge">
-          <img src="img/companies/adobe.svg" alt="adobe">
-          <img src="img/companies/pixar.svg" alt="pixar">
-          <img src="img/companies/google.svg" alt="google">
-          <img src="img/companies/paypal.svg" alt="paypal">
-          <img src="img/companies/kickstarter.svg" alt="kickstarter">
-        </div>
-      </div>
-    </section>
-
-    <section id="businessClass">
-      <div class="container">
-        <div class="left">
-          <img src="img/business-class.svg" alt="busines class">
-        </div>
-        <div class="right">
-          <h1>Does your company or organization need extra administrative control and team super powers? We made <strong>Business Class</strong> for you.</h1>
-          <button type="button" class="btn-white">Learn more about Business Class</button>
-        </div>
-      </div>
-    </section>
-
-    <section id="signUp">
-      <div class="container">
-        <h1><strong>Ditch the sticky notes, spreadsheets, email, and clunky software</strong> for managing your projects, and become one of the millions of people to fall in love with Trello. You can add as many boards and people as you want with your free account.</h1>
-        <button type="button" class="btn-green">Sign up - it's free.</button>
-      </div>
-    </section>
-
-    <section id="taco">
-      <div class="container">
-        <div class="left">
-          <img src="img/taco.png" alt="taco">
-        </div>
-        <div class="right">
-          <h1>Oh, and this is <strong>Taco, our spokes-husky.</strong> You’ll see him around.</h1>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <div class="container">
-        <ul id="nav-footer">
-          <li><a href="#" title="tour">Tour</a></li>
-          <li><a href="#" title="pricing">Pricing</a></li>
-          <li><a href="#" title="apps">Apps</a></li>
-          <li><a href="#" title="jobs">Jobs</a></li>
-          <li><a href="#" title="blog">Blog</a></li>
-          <li><a href="#" title="developers">Developers</a></li>
-          <li><a href="#" title="about">About</a></li>
-          <li><a href="#" title="help">Help</a></li>
-          <li><a href="#" title="legal">Legal</a></li>
-        </ul>
-        <p>© Copyright 2016, Trello, Inc. All rights reserved.</p>
-      </div>
-    </footer>
-
-    <div class="arrow-up">
-      <a href="#description" title="Go top">
-        <img src="img/arrow-up.svg" alt="Go top">
-      </a>
+        </article>
+        <article class="slack">
+            <a href="http://slack.com" target="_blank">
+                <img src="https://drive.google.com/uc?id=1ZzJdClN7BGk-nog6EyBBJMTC0f9-cee9" alt="">
+            </a>
+        </article>
+        <article class="email">
+            <a href="mailto:consultas@digitalhouse.com?cc=otromail@digitalhouse.com.com" target="_blank">
+                <img src="https://drive.google.com/uc?id=16L-imperM4V_fRWhj3SabPk7dpjLuPzX" alt="">
+            </a>
+        </article>
+        <article class="aula-virtual">
+            <a href="http://playground.com">
+                <img src="https://drive.google.com/uc?id=1uce-lFBdkDU0vzoCBmW4_b2EHhFRpH8F" alt="">
+            </a>
+        </article>
+        <article class="calendar">
+            <a href="http://calendar.google.com">
+                <img src="https://drive.google.com/uc?id=1n3XBsz0muvx0YEfh57SF8wxgKoW8SnZ0" alt="">
+            </a>
+        </article>
+        
     </div>
-
-    <script>
-      $(".icon").click(function() {
-        $(".links").toggle();
-      });
-    </script>
-  </body>
+</body>
 </html>
