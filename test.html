@@ -1,0 +1,52 @@
+<style media="screen">
+		body {
+			font-family: sans-serif;
+		}
+
+		a {
+			color: #4cc4d4;
+		}
+</style>
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<h2 style="margin-bottom:20px">Prueba peergrade</h2>
+		<a class="mostrar-peergrade" href="#">Mostrar</a>
+		<iframe class="iframe-peergrade" style="width:100%;height:80vh;display:none" src="https://app.peergrade.io/student/courses/c66776e4-909f-4670-b35d-a18468765446" frameborder="0&quot;"></iframe>
+
+		<h2 style="margin-bottom:20px">Prueba Trello</h2>
+		<a class="mostrar-trello" href="#">Mostrar</a>
+		<iframe class="iframe-trello" style="width:100%;height:80vh;display:none;" src="https://trello.com/b/rp5OA7K3.html" frameborder="0"></iframe>
+
+		<script>
+			console.log("Soy sus!");
+			document.querySelector(".mostrar-peergrade").onclick = function(e) {
+					e.preventDefault();
+					if (document.querySelector(".mostrar-peergrade").innerHTML == "Mostrar") {
+							document.querySelector(".mostrar-peergrade").innerHTML = "Ocultar"
+								document.querySelector(".iframe-peergrade").style.display = "block"
+						} else {
+							document.querySelector(".mostrar-peergrade").innerHTML = "Mostrar"
+								document.querySelector(".iframe-peergrade").style.display = "none"
+						}
+				}
+
+				document.querySelector(".mostrar-trello").onclick = function(e) {
+					e.preventDefault();
+					if (document.querySelector(".mostrar-trello").innerHTML == "Mostrar") {
+							document.querySelector(".mostrar-trello").innerHTML = "Ocultar"
+								document.querySelector(".iframe-trello").style.display = "block"
+						} else {
+							document.querySelector(".mostrar-trello").innerHTML = "Mostrar"
+								document.querySelector(".iframe-trello").style.display = "none"
+						}
+				}
+		</script>
+
+	</body>
+</html>
