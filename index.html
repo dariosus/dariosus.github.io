@@ -6,7 +6,7 @@
     <title>Dashboard</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <style>
-         p {
+         p.principal {
             margin-top: 25px;
             text-align: center;
             font-size: 50px;
@@ -14,10 +14,13 @@
             margin-bottom: 0;
         }
 
+        div.caja {
+          width: 30%;
+        }
+
         article {
             background-color: blue;
             margin-top: 25px;
-            width: 30%;
             height: 25vh;
             border-radius: 20px;
         }
@@ -81,7 +84,7 @@
         article.slack img {
             width: 52%;
         }
-        
+
         article.email img {
             width: 38%;
         }
@@ -94,6 +97,13 @@
             width: 60%;
             bottom: 0;
             transform: translate(-50%,0%);
+        }
+
+        div.caja p {
+          text-align: center;
+          font-family: sans-serif;
+          margin-top: 20px;
+          font-size: 22px;
         }
 
         @media(max-width:700px) {
@@ -113,46 +123,64 @@
                 justify-content: space-around;
             }
 
-            p {
+            p.principal {
                 font-size: 35px;
             }
         }
     </style>
 </head>
 <body>
-    <p>Mis herramientas</p>
+    <p class="principal">Mis herramientas</p>
     <div class="container">
-        <article class="zoom">
+        <div class="caja">
+          <p>Clases en vivo</p>
+          <article class="zoom">
             <a href="http://zoom.us" target="_blank">
                 <img src="https://drive.google.com/uc?id=1DTJG-Bzzh7T4ZIAm77MkU2-vNBN0EFxB" alt="">
             </a>
-        </article>
-        <article class="so">
+          </article>
+        </div>
+        <div class="caja">
+          <p>Foro</p>
+          <article class="so">
             <a href="http://stackoverflow.com" target="_blank">
                 <img src="https://drive.google.com/uc?id=1pv5NMV_rsPV8mDx5IUfrJwsEw4Y5tPBi" alt="">
             </a>
-        </article>
-        <article class="slack">
+          </article>
+        </div>
+        <div class="caja">
+          <p>Chat</p>
+          <article class="slack">
             <a href="http://slack.com" target="_blank">
                 <img src="https://drive.google.com/uc?id=1ZzJdClN7BGk-nog6EyBBJMTC0f9-cee9" alt="">
             </a>
-        </article>
-        <article class="email">
+          </article>
+        </div>
+        <div class="caja">
+          <p>Email a docentes</p>
+          <article class="email">
             <a href="mailto:consultas@digitalhouse.com?cc=otromail@digitalhouse.com.com" target="_blank">
                 <img src="https://drive.google.com/uc?id=16L-imperM4V_fRWhj3SabPk7dpjLuPzX" alt="">
             </a>
-        </article>
-        <article class="aula-virtual">
-            <a href="http://playground.com">
+          </article>
+        </div>
+        <div class="caja">
+          <p>Contenido online</p>
+          <article class="aula-virtual">
+            <a href="http://playground.com" target="_blank">
                 <img src="https://drive.google.com/uc?id=1uce-lFBdkDU0vzoCBmW4_b2EHhFRpH8F" alt="">
             </a>
-        </article>
-        <article class="calendar">
-            <a href="http://calendar.google.com">
+          </article>
+        </div>
+        <div class="caja">
+          <p>Calendario</p>
+          <article class="calendar">
+            <a href="http://calendar.google.com" target="_blank">
                 <img src="https://drive.google.com/uc?id=1n3XBsz0muvx0YEfh57SF8wxgKoW8SnZ0" alt="">
             </a>
-        </article>
-        
+          </article>
+        </div>
+
     </div>
 </body>
 </html>
